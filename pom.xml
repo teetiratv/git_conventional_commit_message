@@ -49,10 +49,10 @@
                         <origin>origin</origin>
                     </gitFlowConfig>
                     <skipTestProject>true</skipTestProject>
-                    <versionsForceUpdate>true</versionsForceUpdate>
+
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
                     <keepBranch>true</keepBranch>
-					<skipUpdateVersion>true</skipUpdateVersion>
+
                 </configuration>
             </plugin>
         </plugins>

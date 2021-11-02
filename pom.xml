@@ -50,6 +50,7 @@
                     </gitFlowConfig>
                     <versionDigitToIncrement>2</versionDigitToIncrement>
                     <sameBranchName>true</sameBranchName>
+                    <skipUpdateVersion>true</skipUpdateVersion>
                 </configuration>
             </plugin>
         </plugins>

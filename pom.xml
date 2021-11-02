@@ -47,7 +47,6 @@
 						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
 						<origin>origin</origin>
 					</gitFlowConfig>
-					<fetchRemote>false</fetchRemote>
 				</configuration>
 			</plugin>
 		</plugins>

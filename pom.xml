@@ -50,6 +50,7 @@
                         <origin>origin</origin>
                     </gitFlowConfig>
                     <keepBranch>true</keepBranch>
+                    <skipMergeDevBranch>true</skipMergeDevBranch>
                 </configuration>
             </plugin>
         </plugins>

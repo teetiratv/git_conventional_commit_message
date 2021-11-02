@@ -56,8 +56,8 @@
                     <skipTestProject>true</skipTestProject>
 
                     <gitFlowConfig>
-                        <productionBranch>main</productionBranch>
-                        <developmentBranch>main</developmentBranch>
+                        <productionBranch>${asd}</productionBranch>
+                        <developmentBranch>${asd}</developmentBranch>
                         <featureBranchPrefix>feature/</featureBranchPrefix>
                         <releaseBranchPrefix>feature/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>

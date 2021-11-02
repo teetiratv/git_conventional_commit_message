@@ -57,7 +57,7 @@
 
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
-                        <developmentBranch><executable>git branch</executable></developmentBranch>
+                        <developmentBranch>${project.version}</developmentBranch>
                         <featureBranchPrefix>feature/</featureBranchPrefix>
                         <releaseBranchPrefix>feature/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>

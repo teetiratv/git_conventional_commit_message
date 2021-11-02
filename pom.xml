@@ -41,8 +41,6 @@
 				<version>1.16.0</version>
 				<configuration>
 					<gitFlowConfig>
-						<productionBranch>main</productionBranch>
-						<developmentBranch>main</developmentBranch>
 						<featureBranchPrefix>feature/</featureBranchPrefix>
 						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
 						<origin>origin</origin>

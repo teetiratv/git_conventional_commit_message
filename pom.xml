@@ -51,6 +51,7 @@
 					<skipTestProject>true</skipTestProject>
 					<versionsForceUpdate>true</versionsForceUpdate>
 					<pushRemote>false</pushRemote>
+					<incrementVersionAtFinish>true</incrementVersionAtFinish>
 				</configuration>
 			</plugin>
 		</plugins>

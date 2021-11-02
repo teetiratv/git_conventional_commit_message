@@ -43,13 +43,12 @@
                     <mvnExecutable>./mvnw</mvnExecutable>
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
-                        <developmentBranch>main</developmentBranch>
+                        <developmentBranch>release/</developmentBranch>
                         <releaseBranchPrefix>release/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>
-                    <skipMergeDevBranch>true</skipMergeDevBranch>
-                    <skipMergeProdBranch>true</skipMergeProdBranch>
+                    <keepBranch>true</keepBranch>
                 </configuration>
             </plugin>
         </plugins>

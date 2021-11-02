@@ -52,18 +52,19 @@
 
                     <installProject>false</installProject>
                     <verbose>false</verbose>
-<!--                    <keepBranch>true</keepBranch>-->
+                    <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
 
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
                         <developmentBranch>main</developmentBranch>
                         <featureBranchPrefix>feature/</featureBranchPrefix>
-                        <releaseBranchPrefix>release/</releaseBranchPrefix>
+                        <releaseBranchPrefix>feature/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>
-                    <versionDigitToIncrement>2</versionDigitToIncrement>
+                    <versionDigitToIncrement>1</versionDigitToIncrement>
+                    <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
                 </configuration>
             </plugin>
         </plugins>

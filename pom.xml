@@ -52,6 +52,9 @@
 
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
+                    <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
+                    <skipTag>true</skipTag>
+                    <versionDigitToIncrement>1</versionDigitToIncrement>
 
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>

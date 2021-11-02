@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>git</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.0.7-p-SNAPSHOT</version>
     <name>git</name>
     <description>Demo project for Spring Boot</description>
     <properties>

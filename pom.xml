@@ -63,8 +63,8 @@
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>
-                    <versionDigitToIncrement>0</versionDigitToIncrement>
-                    <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
+                    <versionDigitToIncrement>3</versionDigitToIncrement>
+                    <skipReleaseMergeProdBranch>false</skipReleaseMergeProdBranch>
                     <fetchRemote>true</fetchRemote>
                     <skipTag>true</skipTag>
                     <allowSnapshots>false</allowSnapshots>

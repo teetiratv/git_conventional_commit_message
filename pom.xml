@@ -53,8 +53,8 @@
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
                     <skipTag>true</skipTag>
-                    <versionDigitToIncrement>${versionDigitToIncrement}</versionDigitToIncrement>
-                    <skipUpdateVersion>${skipUpdateVersion}</skipUpdateVersion>
+                    <versionDigitToIncrement>${a}</versionDigitToIncrement>
+                    <skipUpdateVersion>${b}</skipUpdateVersion>
 
                     <gitFlowConfig>
                         <productionBranch>${currentBranch}</productionBranch>

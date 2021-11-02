@@ -57,7 +57,7 @@
 
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
-                        <developmentBranch>${git branch}</developmentBranch>
+                        <developmentBranch><executable>git branch</executable></developmentBranch>
                         <featureBranchPrefix>feature/</featureBranchPrefix>
                         <releaseBranchPrefix>feature/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
@@ -67,6 +67,7 @@
                     <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
                     <fetchRemote>false</fetchRemote>
                     <releaseMergeNoFF>false</releaseMergeNoFF>
+                    <skipTag>false</skipTag>
                 </configuration>
             </plugin>
         </plugins>

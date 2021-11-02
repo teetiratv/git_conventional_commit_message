@@ -50,20 +50,14 @@
                 <version>1.16.0</version>
                 <configuration>
 
-                    <installProject>false</installProject>
-                    <verbose>false</verbose>
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
-                    <versionDigitToIncrement>3</versionDigitToIncrement>
-                    <skipReleaseMergeProdBranch>false</skipReleaseMergeProdBranch>
-                    <fetchRemote>false</fetchRemote>
-                    <skipTag>true</skipTag>
-                    <allowSnapshots>false</allowSnapshots>
+
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
-                        <developmentBranch>feature/0.0.10</developmentBranch>
+                        <developmentBranch>main</developmentBranch>
                         <featureBranchPrefix>feature/</featureBranchPrefix>
-                        <releaseBranchPrefix>feature/</releaseBranchPrefix>
+                        <releaseBranchPrefix>release/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>

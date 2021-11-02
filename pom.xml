@@ -50,7 +50,6 @@
                     </gitFlowConfig>
                     <skipTestProject>true</skipTestProject>
                     <versionsForceUpdate>true</versionsForceUpdate>
-                    <pushRemote>false</pushRemote>
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
                     <keepBranch>true</keepBranch>
 					<skipUpdateVersion>true</skipUpdateVersion>

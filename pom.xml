@@ -36,24 +36,15 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>com.amashchenko.maven.plugin</groupId>
-                <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.16.0</version>
-                <configuration>
-                    <mvnExecutable>./mvnw</mvnExecutable>
-                    <gitFlowConfig>
-                        <productionBranch>feature/</productionBranch>
-                        <developmentBranch>main</developmentBranch>
-                        <releaseBranchPrefix>release/</releaseBranchPrefix>
-                        <featureBranchPrefix>feature/</featureBranchPrefix>
-                        <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-                        <origin>origin</origin>
-                    </gitFlowConfig>
-                    <keepBranch>true</keepBranch>
-                    <skipMergeDevBranch>true</skipMergeDevBranch>
-                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M4</version>
             </plugin>
         </plugins>
     </build>
-
+    <scm>
+        <connection>scm:git:git@github.com:teetiratv/git_conventional_commit_message.git</connection>
+        <url>scm:git:git@github.com:teetiratv/git_conventional_commit_message.git</url>
+        <developerConnection>scm:git:git@github.com:teetiratv/git_conventional_commit_message.git</developerConnection>
+    </scm>
 </project>

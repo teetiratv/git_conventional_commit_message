@@ -41,12 +41,16 @@
 				<version>1.16.0</version>
 				<configuration>
 					<gitFlowConfig>
-
+						<productionBranch>main</productionBranch>
 						<developmentBranch>main</developmentBranch>
+						<releaseBranchPrefix>release/</releaseBranchPrefix>
 						<featureBranchPrefix>feature/</featureBranchPrefix>
 						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
 						<origin>origin</origin>
 					</gitFlowConfig>
+					<skipTestProject>true</skipTestProject>
+					<versionsForceUpdate>true</versionsForceUpdate>
+					<pushRemote>false</pushRemote>
 				</configuration>
 			</plugin>
 		</plugins>

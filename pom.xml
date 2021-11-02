@@ -47,17 +47,19 @@
             <plugin>
                 <groupId>com.amashchenko.maven.plugin</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.13.0</version>
+                <version>1.16.0</version>
                 <configuration>
 
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
+                    <skipTag>true</skipTag>
+                    <versionDigitToIncrement>1</versionDigitToIncrement>
 
                     <gitFlowConfig>
-                        <productionBranch>main</productionBranch>
-                        <developmentBranch>main</developmentBranch>
+<!--                        <productionBranch>main</productionBranch>-->
+<!--                        <developmentBranch>main</developmentBranch>-->
                         <featureBranchPrefix>feature/</featureBranchPrefix>
-                        <releaseBranchPrefix>release/</releaseBranchPrefix>
+                        <releaseBranchPrefix>feature/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>

@@ -42,9 +42,10 @@
                 <configuration>
                     <mvnExecutable>./mvnw</mvnExecutable>
                     <gitFlowConfig>
-                        <productionBranch>main</productionBranch>
-                        <developmentBranch>release/</developmentBranch>
+                        <productionBranch>feature/</productionBranch>
+                        <developmentBranch>main</developmentBranch>
                         <releaseBranchPrefix>release/</releaseBranchPrefix>
+                        <featureBranchPrefix>feature/</featureBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>

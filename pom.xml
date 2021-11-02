@@ -52,7 +52,7 @@
                     <skipTestProject>true</skipTestProject>
                     <pushRemote>true</pushRemote>
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
-                    <versionDigitToIncrement>${gitflowDigitToIncrement}</versionDigitToIncrement>
+                    <versionDigitToIncrement>1</versionDigitToIncrement>
                 </configuration>
             </plugin>
         </plugins>

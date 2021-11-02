@@ -53,14 +53,10 @@
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
                     <skipTag>true</skipTag>
-                    <versionDigitToIncrement>1</versionDigitToIncrement>
 
                     <gitFlowConfig>
-                        <productionBranch>${myVariable}</productionBranch>
-                        <developmentBranch>${myVariable}</developmentBranch>
-<!--                        <featureBranchPrefix>feature/</featureBranchPrefix>-->
-<!--                        <releaseBranchPrefix>release/</releaseBranchPrefix>-->
-<!--                        <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>-->
+                        <productionBranch>${currentBranch}</productionBranch>
+                        <developmentBranch>${currentBranch}</developmentBranch>
                         <origin>origin</origin>
                     </gitFlowConfig>
 

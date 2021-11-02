@@ -54,6 +54,7 @@
                     <skipTestProject>true</skipTestProject>
                     <skipTag>true</skipTag>
                     <versionDigitToIncrement>${a}</versionDigitToIncrement>
+                    <skipUpdateVersion>true</skipUpdateVersion>
 
 
                     <gitFlowConfig>

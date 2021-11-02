@@ -66,6 +66,7 @@
                     <versionDigitToIncrement>1</versionDigitToIncrement>
                     <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
                     <fetchRemote>false</fetchRemote>
+                    <releaseMergeNoFF>false</releaseMergeNoFF>
                 </configuration>
             </plugin>
         </plugins>

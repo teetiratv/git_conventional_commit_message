@@ -53,7 +53,10 @@
                     <pushRemote>true</pushRemote>
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
                     <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
+                    <skipMergeProdBranch>true</skipMergeProdBranch>
+                    <skipMergeDevBranch>true</skipMergeDevBranch>
                     <versionDigitToIncrement>2</versionDigitToIncrement>
+                    <allowSnapshots>false</allowSnapshots>
                 </configuration>
             </plugin>
         </plugins>

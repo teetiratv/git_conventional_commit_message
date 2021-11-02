@@ -44,19 +44,12 @@
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
                         <developmentBranch>main</developmentBranch>
-                        <releaseBranchPrefix>release/</releaseBranchPrefix>
-                        <featureBranchPrefix>feature/</featureBranchPrefix>
+                        <releaseBranchPrefix>feature/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>
-                    <skipTestProject>true</skipTestProject>
-                    <pushRemote>true</pushRemote>
-                    <incrementVersionAtFinish>true</incrementVersionAtFinish>
-                    <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
-                    <skipMergeProdBranch>true</skipMergeProdBranch>
-                    <skipMergeDevBranch>true</skipMergeDevBranch>
                     <versionDigitToIncrement>2</versionDigitToIncrement>
-                    <allowSnapshots>false</allowSnapshots>
+                    <sameBranchName>true</sameBranchName>
                 </configuration>
             </plugin>
         </plugins>

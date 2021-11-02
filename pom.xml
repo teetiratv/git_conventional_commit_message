@@ -9,11 +9,8 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>git</artifactId>
-<<<<<<< HEAD
+
     <version>0.0.8</version>
-=======
-    <version>0.1.0</version>
->>>>>>> release/0.1.0
     <name>git</name>
     <description>Demo project for Spring Boot</description>
     <properties>

@@ -65,7 +65,7 @@
                     </gitFlowConfig>
                     <versionDigitToIncrement>0</versionDigitToIncrement>
                     <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
-                    <fetchRemote>false</fetchRemote>
+                    <fetchRemote>true</fetchRemote>
                     <releaseMergeNoFF>false</releaseMergeNoFF>
                     <skipTag>true</skipTag>
                     <allowSnapshots>false</allowSnapshots>

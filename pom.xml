@@ -40,7 +40,14 @@
 				<artifactId>gitflow-maven-plugin</artifactId>
 				<version>1.16.0</version>
 				<configuration>
-					<fetchRemote>main</fetchRemote>
+					<gitFlowConfig>
+						<productionBranch>main</productionBranch>
+						<developmentBranch>main</developmentBranch>
+						<featureBranchPrefix>feature/</featureBranchPrefix>
+						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+						<origin>origin</origin>
+					</gitFlowConfig>
+					<fetchRemote>false</fetchRemote>
 				</configuration>
 			</plugin>
 		</plugins>

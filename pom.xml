@@ -48,9 +48,8 @@
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>
-                    <versionDigitToIncrement>2</versionDigitToIncrement>
-                    <sameBranchName>true</sameBranchName>
-                    <skipUpdateVersion>true</skipUpdateVersion>
+                    <skipMergeDevBranch>true</skipMergeDevBranch>
+                    <skipMergeProdBranch>true</skipMergeProdBranch>
                 </configuration>
             </plugin>
         </plugins>

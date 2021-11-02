@@ -56,8 +56,8 @@
                     <versionDigitToIncrement>1</versionDigitToIncrement>
 
                     <gitFlowConfig>
-                        <productionBranch>${myVariable}</productionBranch>
-                        <developmentBranch>${myVariable}</developmentBranch>
+                        <productionBranch>feature/asd</productionBranch>
+                        <developmentBranch>feature/asd</developmentBranch>
 <!--                        <featureBranchPrefix>feature/</featureBranchPrefix>-->
 <!--                        <releaseBranchPrefix>release/</releaseBranchPrefix>-->
 <!--                        <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>-->

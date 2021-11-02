@@ -10,7 +10,7 @@
     <groupId>com.example</groupId>
     <artifactId>git</artifactId>
 
-    <version>3.6.0-SNAPSHOT</version>
+    <version>3.5.0</version>
     <name>git</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -53,6 +53,7 @@
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
                     <skipTag>true</skipTag>
+                    <allowSnapshots>true</allowSnapshots>
                     <versionDigitToIncrement>${versionDigitToIncrement}</versionDigitToIncrement>
 
 

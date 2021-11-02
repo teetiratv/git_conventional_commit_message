@@ -56,11 +56,11 @@
                     <versionDigitToIncrement>1</versionDigitToIncrement>
 
                     <gitFlowConfig>
-<!--                        <productionBranch>main</productionBranch>-->
-<!--                        <developmentBranch>main</developmentBranch>-->
-                        <featureBranchPrefix>feature/</featureBranchPrefix>
-                        <releaseBranchPrefix>release/</releaseBranchPrefix>
-                        <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+                        <productionBranch>main</productionBranch>
+                        <developmentBranch>main</developmentBranch>
+<!--                        <featureBranchPrefix>feature/</featureBranchPrefix>-->
+<!--                        <releaseBranchPrefix>release/</releaseBranchPrefix>-->
+<!--                        <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>-->
                         <origin>origin</origin>
                     </gitFlowConfig>
 

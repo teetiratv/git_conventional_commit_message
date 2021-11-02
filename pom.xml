@@ -56,7 +56,7 @@
                     <skipTestProject>true</skipTestProject>
                     <versionDigitToIncrement>3</versionDigitToIncrement>
                     <skipReleaseMergeProdBranch>false</skipReleaseMergeProdBranch>
-                    <fetchRemote>true</fetchRemote>
+                    <fetchRemote>false</fetchRemote>
                     <skipTag>true</skipTag>
                     <allowSnapshots>false</allowSnapshots>
                     <gitFlowConfig>

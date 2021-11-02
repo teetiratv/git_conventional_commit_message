@@ -52,6 +52,7 @@
                     <skipTestProject>true</skipTestProject>
                     <pushRemote>true</pushRemote>
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
+                    <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
                     <versionDigitToIncrement>2</versionDigitToIncrement>
                 </configuration>
             </plugin>

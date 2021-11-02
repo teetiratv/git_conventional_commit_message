@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>git</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.8-SNAPSHOT</version>
     <name>git</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -45,6 +45,6 @@
         <connection>scm:git:git@github.com:teetiratv/git_conventional_commit_message.git</connection>
         <url>scm:git:git@github.com:teetiratv/git_conventional_commit_message.git</url>
         <developerConnection>scm:git:git@github.com:teetiratv/git_conventional_commit_message.git</developerConnection>
-      <tag>git-0.0.7</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>

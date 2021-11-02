@@ -54,7 +54,11 @@
                     <verbose>false</verbose>
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
-
+                    <versionDigitToIncrement>3</versionDigitToIncrement>
+                    <skipReleaseMergeProdBranch>false</skipReleaseMergeProdBranch>
+                    <fetchRemote>true</fetchRemote>
+                    <skipTag>true</skipTag>
+                    <allowSnapshots>false</allowSnapshots>
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
                         <developmentBranch>feature/0.0.10</developmentBranch>
@@ -63,11 +67,7 @@
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>
-                    <versionDigitToIncrement>3</versionDigitToIncrement>
-                    <skipReleaseMergeProdBranch>false</skipReleaseMergeProdBranch>
-                    <fetchRemote>true</fetchRemote>
-                    <skipTag>true</skipTag>
-                    <allowSnapshots>false</allowSnapshots>
+
                 </configuration>
             </plugin>
         </plugins>

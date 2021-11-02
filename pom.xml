@@ -40,6 +40,7 @@
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>1.16.0</version>
                 <configuration>
+                    <mvnExecutable>./mvnw</mvnExecutable>
                     <gitFlowConfig>
                         <productionBranch>main</productionBranch>
                         <developmentBranch>main</developmentBranch>
@@ -49,10 +50,9 @@
                         <origin>origin</origin>
                     </gitFlowConfig>
                     <skipTestProject>true</skipTestProject>
-
+                    <pushRemote>true</pushRemote>
                     <incrementVersionAtFinish>true</incrementVersionAtFinish>
-                    <keepBranch>true</keepBranch>
-
+                    <versionDigitToIncrement>${gitflowDigitToIncrement}</versionDigitToIncrement>
                 </configuration>
             </plugin>
         </plugins>

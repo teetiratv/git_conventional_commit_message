@@ -59,7 +59,7 @@
 <!--                        <productionBranch>main</productionBranch>-->
 <!--                        <developmentBranch>main</developmentBranch>-->
                         <featureBranchPrefix>feature/</featureBranchPrefix>
-                        <releaseBranchPrefix>feature/</releaseBranchPrefix>
+                        <releaseBranchPrefix>release/</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
                         <origin>origin</origin>
                     </gitFlowConfig>

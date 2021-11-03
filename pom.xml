@@ -40,6 +40,7 @@
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>1.16.0</version>
                 <configuration>
+                    <skipUpdateVersion>true</skipUpdateVersion>
                     <mvnExecutable>./mvnw</mvnExecutable>
                     <installProject>false</installProject>
                     <verbose>false</verbose>

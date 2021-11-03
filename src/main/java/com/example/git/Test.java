@@ -2,6 +2,6 @@ package com.example.git;
 
 public class Test {
     public void a() {
-        System.out.println("1sda32");
+        System.out.println("231");
     }
 }

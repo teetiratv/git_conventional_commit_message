@@ -241,7 +241,15 @@ Changelog for teetiratv git_conventional_commit_message.
 [0588a64224004a2](https://github.com/teetiratv/git_conventional_commit_message/commit/0588a64224004a2) Teetirat (Pai) Veangngoen *2021-11-02 12:38:53*
 
 
-## refs/tags/3.0.5
+## 3.0.5
+### Jira git-0   
+
+**[maven-release-plugin] prepare release git-0.0.7**
+
+
+[6e1edd6e9020f51](https://github.com/teetiratv/git_conventional_commit_message/commit/6e1edd6e9020f51) Teetirat (Pai) Veangngoen *2021-11-02 09:49:55*
+
+
 ### No issue
 
 **Merge branch 'release/3.0.5'**
@@ -478,6 +486,11 @@ Changelog for teetiratv git_conventional_commit_message.
 
 
 [a0b3cbe66cdd9aa](https://github.com/teetiratv/git_conventional_commit_message/commit/a0b3cbe66cdd9aa) Teetirat (Pai) Veangngoen *2021-11-02 10:03:24*
+
+**[maven-release-plugin] prepare for next development iteration**
+
+
+[8897e1a4c2b3eaf](https://github.com/teetiratv/git_conventional_commit_message/commit/8897e1a4c2b3eaf) Teetirat (Pai) Veangngoen *2021-11-02 09:50:02*
 
 **add plugin**
 

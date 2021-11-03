@@ -71,9 +71,13 @@
                                 <![CDATA[
 # Changelog
 
-{{#ifContainsType commits type="fix"}}
-  commits contains fixes
-{{/ifContainsType}}
+Changelog for {{ownerName}} {{repoName}}.
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+  {{#hasIssue}}
+   {{#hasLink}}
 ]]>
                             </templateContent>
                         </configuration>

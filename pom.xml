@@ -71,18 +71,9 @@
                                 <![CDATA[
 # Changelog
 
-Changelog for {{ownerName}} {{repoName}}.
-
-{{#tags}}
-## {{name}}
- {{#issues}}
-  {{#hasIssue}}
-   {{#hasLink}}
-   ### {{name}} [{{issue}}]({{link}}) {{title}} {{#hasIssueType}} *{{issueType}}* {{/hasIssueType}} {{#hasLabels}} {{#labels}} *{{.}}* {{/labels}} {{/hasLabels}}
-   {{/hasLink}}
-  {{/hasIssue}}
- {{/issues}}
-{{/tags}}
+{{#commits}}
+ {{commitDescription .}}
+{{/commits}}
 ]]>
                             </templateContent>
                         </configuration>

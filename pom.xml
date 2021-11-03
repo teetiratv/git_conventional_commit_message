@@ -69,35 +69,23 @@
                         <configuration>
                             <templateContent>
                                 <![CDATA[
-# Changelog
-
+# Git Changelog Maven plugin changelog
+Changelog of Git Changelog Maven plugin.
 {{#tags}}
-{{#ifReleaseTag .}}
-## [{{name}}](https://gitservice/{{name}}) ({{tagDate .}})
-
-  {{#ifContainsType commits type='feat'}}
-### Features
-
-    {{#commits}}
-      {{#ifCommitType . type='feat'}}
- - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
-      {{/ifCommitType}}
-    {{/commits}}
-  {{/ifContainsType}}
-
-  {{#ifContainsType commits type='fix'}}
-### Bug Fixes
-
-    {{#commits}}
-      {{#ifCommitType . type='fix'}}
- - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
-      {{/ifCommitType}}
-    {{/commits}}
-  {{/ifContainsType}}
-
-{{/ifReleaseTag}}
+## {{name}}
+ {{#issues}}
+  {{#hasLink}}
+### {{name}} [{{issue}}]({{link}}) {{title}}
+  {{/hasLink}}
+  {{^hasLink}}
+### {{name}} / {{title}}
+  {{/hasLink}}
+  {{#commits}}
+   {{{message}}}
+  {{/commits}}
+ {{/issues}}
 {{/tags}}
-         ]]>
+]]>
                             </templateContent>
                         </configuration>
                     </execution>

@@ -69,21 +69,45 @@
                         <configuration>
                             <templateContent>
                                 <![CDATA[
-# Git Changelog Maven plugin changelog
-Changelog of Git Changelog Maven plugin.
+# Changelog
+
 {{#tags}}
-## {{name}}
- {{#issues}}
-  {{#hasLink}}
-### {{name}} [{{issue}}]({{link}}) {{title}}
-  {{/hasLink}}
-  {{^hasLink}}
-### {{name}} / {{title}}
-  {{/hasLink}}
-  {{#commits}}
-   {{{message}}}
-  {{/commits}}
- {{/issues}}
+{{#ifReleaseTag .}}
+## [{{name}}](https://gitlab.com/html-validate/html-validate/compare/{{name}}) ({{tagDate .}})
+
+  {{#ifContainsBreaking commits}}
+    ### Breaking changes
+
+    {{#commits}}
+      {{#ifCommitBreaking .}}
+  - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://github.com/{{ownerName}}/{{repoName}}/commit/{{hash}}))
+      {{/ifCommitBreaking}}
+    {{/commits}}
+  {{/ifContainsBreaking}}
+
+
+  {{#ifContainsType commits type='feat'}}
+    ### Features
+
+    {{#commits}}
+      {{#ifCommitType . type='feat'}}
+  - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://github.com/{{ownerName}}/{{repoName}}/commit/{{hash}}))
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='fix'}}
+    ### Bug Fixes
+
+    {{#commits}}
+      {{#ifCommitType . type='fix'}}
+        - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://github.com/{{ownerName}}/{{repoName}}/commit/{{hash}}))
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+{{/ifReleaseTag}}
 {{/tags}}
 ]]>
                             </templateContent>

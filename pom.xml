@@ -78,6 +78,9 @@ Changelog for {{ownerName}} {{repoName}}.
  {{#issues}}
   {{#hasIssue}}
    {{#hasLink}}
+   ### {{name}} [{{issue}}]({{link}}) {{title}} {{#hasIssueType}} *{{issueType}}* {{/hasIssueType}} {{#hasLabels}} {{#labels}} *{{.}}* {{/labels}} {{/hasLabels}}
+   {{/hasLink}}
+  {{/hasIssue}}
  {{/issues}}
 {{/tags}}
 ]]>

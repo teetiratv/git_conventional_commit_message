@@ -78,6 +78,8 @@ Changelog for {{ownerName}} {{repoName}}.
  {{#issues}}
   {{#hasIssue}}
    {{#hasLink}}
+ {{/issues}}
+{{/tags}}
 ]]>
                             </templateContent>
                         </configuration>

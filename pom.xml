@@ -71,9 +71,9 @@
                                 <![CDATA[
 # Changelog
 
-{{#commits}}
- {{commitDescription .}}
-{{/commits}}
+{{#ifContainsBreaking commits}}
+  commits contains fixes
+{{/ifContainsBreaking}}
 ]]>
                             </templateContent>
                         </configuration>

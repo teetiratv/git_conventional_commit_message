@@ -85,6 +85,7 @@
   {{/ifContainsType}}
 ]]>
                             </templateContent>
+                            <toRef>HEAD</toRef>
                         </configuration>
                     </execution>
                 </executions>

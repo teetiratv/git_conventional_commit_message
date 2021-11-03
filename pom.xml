@@ -71,11 +71,15 @@
                                 <![CDATA[
 # Changelog
 
-  {{#commits}}
+  {{#ifContainsType commits type='fix'}}
+### Bug Fixes
+
+    {{#commits}}
       {{#ifCommitType . type='fix'}}
  - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
       {{/ifCommitType}}
     {{/commits}}
+  {{/ifContainsType}}
 ]]>
                             </templateContent>
                             <toRef>HEAD</toRef>

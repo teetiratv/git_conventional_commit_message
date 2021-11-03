@@ -61,21 +61,18 @@
                 <version>1.78</version>
                 <executions>
                     <execution>
-                        <id>GenerateGitChangelog</id>
+                        <id>GenerateGitChangelogTemplateFromFileAndToken</id>
                         <phase>generate-sources</phase>
                         <goals>
                             <goal>git-changelog</goal>
                         </goals>
                         <configuration>
-                            <templateContent>
-                                <![CDATA[
-# Changelog
-
-{{#ifContainsType commits type="fix"}}
-  commits contains fixes
-{{/ifContainsType}}
-]]>
-                            </templateContent>
+                            <gitHubApi>https://api.github.com/repos/tomasbjerre/git-changelog-maven-plugin</gitHubApi>
+                            <gitHubIssuePattern>#([0-9]*)</gitHubIssuePattern>
+                            <templateFile>changelog.mustache</templateFile>
+                            <readableTagName>-([^-]+?)$</readableTagName>
+                            <file>CHANGELOG.md</file>
+                            <ignoreCommitsIfMessageMatches>^\[maven-release-plugin\].*</ignoreCommitsIfMessageMatches>
                         </configuration>
                     </execution>
                 </executions>

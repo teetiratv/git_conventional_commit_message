@@ -30,15 +30,6 @@
     </dependencies>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>com.amashchenko.maven.plugin</groupId>
-                    <artifactId>gitflow-maven-plugin</artifactId>
-                    <version>1.16.0</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -49,20 +40,18 @@
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>1.16.0</version>
                 <configuration>
-
+                    <mvnExecutable>./mvnw</mvnExecutable>
+                    <installProject>false</installProject>
+                    <verbose>false</verbose>
                     <keepBranch>true</keepBranch>
                     <skipTestProject>true</skipTestProject>
                     <skipTag>true</skipTag>
-                    <allowSnapshots>true</allowSnapshots>
                     <versionDigitToIncrement>${versionDigitToIncrement}</versionDigitToIncrement>
-
-
                     <gitFlowConfig>
                         <productionBranch>${currentBranch}</productionBranch>
                         <developmentBranch>${currentBranch}</developmentBranch>
                         <origin>origin</origin>
                     </gitFlowConfig>
-
                 </configuration>
             </plugin>
         </plugins>

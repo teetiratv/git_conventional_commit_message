@@ -66,14 +66,6 @@
                         <goals>
                             <goal>git-changelog</goal>
                         </goals>
-                        <configuration>
-                            <gitHubApi>https://api.github.com/repos/tomasbjerre/git-changelog-maven-plugin</gitHubApi>
-                            <gitHubIssuePattern>#([0-9]*)</gitHubIssuePattern>
-                            <templateFile>changelog.mustache</templateFile>
-                            <readableTagName>-([^-]+?)$</readableTagName>
-                            <file>CHANGELOG.md</file>
-                            <ignoreCommitsIfMessageMatches>^\[maven-release-plugin\].*</ignoreCommitsIfMessageMatches>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>

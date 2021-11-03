@@ -61,11 +61,46 @@
                 <version>1.78</version>
                 <executions>
                     <execution>
-                        <id>GenerateGitChangelogTemplateFromFileAndToken</id>
+                        <id>GenerateGitChangelog</id>
                         <phase>generate-sources</phase>
                         <goals>
                             <goal>git-changelog</goal>
                         </goals>
+                        <configuration>
+                            <templateContent>
+                                <![CDATA[
+# Changelog
+
+{{#tags}}
+{{#ifReleaseTag .}}
+## [{{name}}](https://gitservice/{{name}}) ({{tagDate .}})
+
+  {{#ifContainsType commits type='feat'}}
+### Features
+
+    {{#commits}}
+      {{#ifCommitType . type='feat'}}
+ - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+  {{#ifContainsType commits type='fix'}}
+### Bug Fixes
+
+    {{#commits}}
+      {{#ifCommitType . type='fix'}}
+ - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+{{/ifReleaseTag}}
+{{/tags}}
+]]>
+                            </templateContent>
+                            <toRef>HEAD</toRef>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

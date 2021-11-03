@@ -99,6 +99,7 @@
 {{/tags}}
          ]]>
                             </templateContent>
+                            <fromRef>main</fromRef>
                         </configuration>
                     </execution>
                 </executions>

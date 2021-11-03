@@ -69,33 +69,33 @@
                         <configuration>
                             <templateContent>
                                 <![CDATA[
-          # Changelog
-
 {{#tags}}
-{{#ifReleaseTag .}}
-## [{{name}}](https://gitservice/{{name}}) ({{tagDate .}})
+## {{name}}
+ {{#issues}}
+  {{#hasIssue}}
+   {{#hasLink}}
+### {{name}} [{{issue}}]({{link}}) {{title}} {{#hasIssueType}} *{{issueType}}* {{/hasIssueType}} {{#hasLabels}} {{#labels}} *{{.}}* {{/labels}} {{/hasLabels}}
+   {{/hasLink}}
+   {{^hasLink}}
+### {{name}} {{issue}} {{title}} {{#hasIssueType}} *{{issueType}}* {{/hasIssueType}} {{#hasLabels}} {{#labels}} *{{.}}* {{/labels}} {{/hasLabels}}
+   {{/hasLink}}
+  {{/hasIssue}}
+  {{^hasIssue}}
+### {{name}}
+  {{/hasIssue}}
 
-  {{#ifContainsType commits type='feat'}}
-### Features
+  {{#commits}}
+**{{{messageTitle}}}**
 
-    {{#commits}}
-      {{#ifCommitType . type='feat'}}
- - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
-      {{/ifCommitType}}
-    {{/commits}}
-  {{/ifContainsType}}
+{{#messageBodyItems}}
+ * {{.}}
+{{/messageBodyItems}}
 
-  {{#ifContainsType commits type='fix'}}
-### Bug Fixes
+[{{hash}}](https://github.com/{{ownerName}}/{{repoName}}/commit/{{hash}}) {{authorName}} *{{commitTime}}*
 
-    {{#commits}}
-      {{#ifCommitType . type='fix'}}
- - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
-      {{/ifCommitType}}
-    {{/commits}}
-  {{/ifContainsType}}
+  {{/commits}}
 
-{{/ifReleaseTag}}
+ {{/issues}}
 {{/tags}}
          ]]>
                             </templateContent>

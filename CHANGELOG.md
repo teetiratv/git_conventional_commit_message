@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.2.0] - 2021-11-04
+
+### Features
+
+#### New tag
+
+- Tag
+([986ee3c](https://bitbucket.org/truedmp/spf-profile-incomplete-consumer/commits/986ee3c22321bccf98765217a34ae1ccebc8a427))
+([Jira #123](https://truedmp.atlassian.net/browse/#123))
+
+
 ## [3.1.0] - 2021-11-04
 
 ### Bug Fixes

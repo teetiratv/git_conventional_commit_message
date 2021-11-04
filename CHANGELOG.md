@@ -2,6 +2,8 @@
 
 ### Bug Fixes
 
+ -  **2**  2 ([1efbebc01a1253d](https://gitservice/commit/1efbebc01a1253dd137540027c7103e032e73579))
+ -  **1**  1 ([310a887285973bc](https://gitservice/commit/310a887285973bc6749b8a383799cf249e2db605))
  -  **plugin**  add toRef ([8e0c94a5f906fcb](https://gitservice/commit/8e0c94a5f906fcb2a1ac015570efd1430b127d10))
  -  **app**  print ([689f26d01145c78](https://gitservice/commit/689f26d01145c78d3ef2db4a1bdfba1546332cde))
  -  **app**  print ([9b1b1bcc1a0d5c3](https://gitservice/commit/9b1b1bcc1a0d5c3a8b55facb701648b8ddcf01de))

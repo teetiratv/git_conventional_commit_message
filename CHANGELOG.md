@@ -1,5 +1,13 @@
 # Changelog
 
+## [5.2.0](https://gitservice/5.2.0) (2021-11-08)
+
+### Features
+
+ -  : add new changelog ([750c06ce1eacb7f](https://gitservice/commit/750c06ce1eacb7f8a7efebb1b3f931836a84b132))
+        ([Jira#123](https://gitservice/commit/123))
+
+
 ## [5.1.0](https://gitservice/5.1.0) (2021-11-08)
 
 ### Features

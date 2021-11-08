@@ -83,10 +83,12 @@
 
     {{#commits}}
       {{#ifCommitType . type='feat'}}
- - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
+ - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} : {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
       {{/ifCommitType}}
       {{#eachCommitFooter .}}
-       {{token}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://gitservice/commit/{{value}}))
+        {{/ifFooterHasValue}}
       {{/eachCommitFooter}}
     {{/commits}}
   {{/ifContainsType}}

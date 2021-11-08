@@ -1,5 +1,13 @@
 # Changelog
 
+## [5.1.0](https://gitservice/5.1.0) (2021-11-08)
+
+### Features
+
+ -  **changelog**  : add new changelog ([d386a3cdfaf3823](https://gitservice/commit/d386a3cdfaf3823c3edb65ea143a46125b8a3273))
+        ([Jira#123](https://gitservice/commit/123))
+
+
 ## [5.0.0](https://gitservice/5.0.0) (2021-11-04)
 
 
@@ -16,20 +24,30 @@
 
 ### Features
 
- -  allow provided config object to extend other configs2 ([4b9c84559bf448e](https://gitservice/commit/4b9c84559bf448ee846bee9eb45917cf2d1b9dfc))
- -  allow provided config object to extend other configs2 ([610debd6d414b6d](https://gitservice/commit/610debd6d414b6def7dc6e8fe7a2e96624ece1d8))
- -  allow provided config object to extend other configs2 ([140be023372a6e0](https://gitservice/commit/140be023372a6e0552079ca40d612ef616e11113))
- -  allow provided config object to extend other configs ([bdcf390f779f581](https://gitservice/commit/bdcf390f779f581b39dd03b70821abfdd20480ef))
- -  allow provided config object to extend other configs ([0b244a550b0beda](https://gitservice/commit/0b244a550b0beda5702320e82926ff5200737b96))
- -  allow provided config object to extend other configs ([8d46b309a9d69bd](https://gitservice/commit/8d46b309a9d69bd641d193666ecc0ae8c5610404))
- -  asdasd ([d6c18ef47527427](https://gitservice/commit/d6c18ef47527427d6d9ccf974c8a4c6075231c09))
- -  add depedency 12312 ([f221e4a6d5424d8](https://gitservice/commit/f221e4a6d5424d83b0ddd00b2dbd101b75339829))
- -  add depedency ([ef92a5bdadb5b36](https://gitservice/commit/ef92a5bdadb5b36f6609292fe8a28e7d0425f110))
- -  add depedency ([a19b1dc8881ee34](https://gitservice/commit/a19b1dc8881ee34c15268ab9ee3a688650d8b091))
- -  add depedency ([e3be0f2e2278cee](https://gitservice/commit/e3be0f2e2278cee4fffa0f7d74c50dc389877a40))
- -  add depedency ([003353bed5c1162](https://gitservice/commit/003353bed5c116237e7cf1b61d6a53a7cb7c394a))
- -  add depedency ([1eab8d5b26e1319](https://gitservice/commit/1eab8d5b26e1319f0f49b0e4c91fb85bcb7add33))
- -  add depedency ([57a47f7654be73e](https://gitservice/commit/57a47f7654be73e9894c01bb15d26d093d5a71e9))
+        ([Refs:#123](https://gitservice/commit/123))
+        ([Refs:#123](https://gitservice/commit/123))
+        ([Refs:#123](https://gitservice/commit/123))
+        ([Refs:#123](https://gitservice/commit/123))
+        ([Refs:#123](https://gitservice/commit/123))
+        ([Reviewed-by#Z](https://gitservice/commit/Z))
+        ([fix(plugin)#add toRef](https://gitservice/commit/add toRef))
+        ([fix(app)#print](https://gitservice/commit/print))
+        ([fix(plugin)#delete toRef](https://gitservice/commit/delete toRef))
+        ([fix#delete toRef](https://gitservice/commit/delete toRef))
+ -  : allow provided config object to extend other configs2 ([4b9c84559bf448e](https://gitservice/commit/4b9c84559bf448ee846bee9eb45917cf2d1b9dfc))
+ -  : allow provided config object to extend other configs2 ([610debd6d414b6d](https://gitservice/commit/610debd6d414b6def7dc6e8fe7a2e96624ece1d8))
+ -  : allow provided config object to extend other configs2 ([140be023372a6e0](https://gitservice/commit/140be023372a6e0552079ca40d612ef616e11113))
+ -  : allow provided config object to extend other configs ([bdcf390f779f581](https://gitservice/commit/bdcf390f779f581b39dd03b70821abfdd20480ef))
+ -  : allow provided config object to extend other configs ([0b244a550b0beda](https://gitservice/commit/0b244a550b0beda5702320e82926ff5200737b96))
+ -  : allow provided config object to extend other configs ([8d46b309a9d69bd](https://gitservice/commit/8d46b309a9d69bd641d193666ecc0ae8c5610404))
+ -  : asdasd ([d6c18ef47527427](https://gitservice/commit/d6c18ef47527427d6d9ccf974c8a4c6075231c09))
+ -  : add depedency 12312 ([f221e4a6d5424d8](https://gitservice/commit/f221e4a6d5424d83b0ddd00b2dbd101b75339829))
+ -  : add depedency ([ef92a5bdadb5b36](https://gitservice/commit/ef92a5bdadb5b36f6609292fe8a28e7d0425f110))
+ -  : add depedency ([a19b1dc8881ee34](https://gitservice/commit/a19b1dc8881ee34c15268ab9ee3a688650d8b091))
+ -  : add depedency ([e3be0f2e2278cee](https://gitservice/commit/e3be0f2e2278cee4fffa0f7d74c50dc389877a40))
+ -  : add depedency ([003353bed5c1162](https://gitservice/commit/003353bed5c116237e7cf1b61d6a53a7cb7c394a))
+ -  : add depedency ([1eab8d5b26e1319](https://gitservice/commit/1eab8d5b26e1319f0f49b0e4c91fb85bcb7add33))
+ -  : add depedency ([57a47f7654be73e](https://gitservice/commit/57a47f7654be73e9894c01bb15d26d093d5a71e9))
 
 ### Bug Fixes
 

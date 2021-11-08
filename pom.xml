@@ -50,7 +50,7 @@
                     <skipTag>true</skipTag>
                     <versionDigitToIncrement>${versionDigitToIncrement}</versionDigitToIncrement>
                     <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
-                   
+
                     <gitFlowConfig>
                         <productionBranch>${currentBranch}</productionBranch>
                         <developmentBranch>${currentBranch}</developmentBranch>
@@ -74,6 +74,23 @@
                                 <![CDATA[
 # Changelog
 
+{{#tags}}
+{{#ifReleaseTag .}}
+## [{{name}}](https://gitservice/{{name}}) ({{tagDate .}})
+
+  {{#ifContainsType commits type='feat'}}
+### Features
+
+    {{#commits}}
+      {{#ifCommitType . type='feat'}}
+ - {{#eachCommitScope .}} **{{.}}** {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://gitservice/commit/{{hashFull}}))
+      {{/ifCommitType}}
+      {{#eachCommitFooter .}}
+       {{token}}
+      {{/eachCommitFooter}}
+    {{/commits}}
+  {{/ifContainsType}}
+
   {{#ifContainsType commits type='fix'}}
 ### Bug Fixes
 
@@ -83,6 +100,9 @@
       {{/ifCommitType}}
     {{/commits}}
   {{/ifContainsType}}
+
+{{/ifReleaseTag}}
+{{/tags}}
 ]]>
                             </templateContent>
                             <toRef>HEAD</toRef>

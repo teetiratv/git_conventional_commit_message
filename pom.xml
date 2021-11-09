@@ -52,7 +52,6 @@
                     <skipReleaseMergeProdBranch>true</skipReleaseMergeProdBranch>
 
                     <gitFlowConfig>
-                        <productionBranch>${currentBranch}</productionBranch>
                         <developmentBranch>${currentBranch}</developmentBranch>
                         <origin>origin</origin>
                     </gitFlowConfig>

@@ -1,0 +1,393 @@
+# Changelog
+
+{{#tags}}
+{{#ifEquals name "Unreleased"}}##Unreleased
+
+  {{#ifContainsBreaking commits}}
+### Breaking changes
+
+    {{#commits}}
+      {{#ifCommitBreaking .}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitBreaking}}
+    {{/commits}}
+  {{/ifContainsBreaking}}
+
+
+  {{#ifContainsType commits type='feat'}}
+### Features
+
+    {{#commits}}
+      {{#ifCommitType . type='feat'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='fix'}}
+### Bug Fixes
+
+    {{#commits}}
+      {{#ifCommitType . type='fix'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='docs'}}
+### Documentation
+
+    {{#commits}}
+      {{#ifCommitType . type='docs'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='refactor'}}
+### Refactor
+
+    {{#commits}}
+      {{#ifCommitType . type='refactor'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='perf'}}
+### Performance
+
+    {{#commits}}
+      {{#ifCommitType . type='perf'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='test'}}
+### Testing
+
+    {{#commits}}
+      {{#ifCommitType . type='test'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+{{/ifEquals}}
+
+
+  {{#ifContainsType commits type='chore'}}
+### Chores
+
+    {{#commits}}
+      {{#ifCommitType . type='chore'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='style'}}
+### Styles
+
+    {{#commits}}
+      {{#ifCommitType . type='style'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='build'}}
+### Builds
+
+    {{#commits}}
+      {{#ifCommitType . type='build'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='ci'}}
+### Continuous Integrations
+
+    {{#commits}}
+      {{#ifCommitType . type='ci'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='cd'}}
+### Continuous Delivery
+
+    {{#commits}}
+      {{#ifCommitType . type='cd'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+{{#ifReleaseTag .}}
+## [{{name}}](https://bitbucket.org/truedmp/spf-profile-extended/src/{{name}}) ({{tagDate .}})
+
+  {{#ifContainsBreaking commits}}
+### Breaking changes
+
+    {{#commits}}
+      {{#ifCommitBreaking .}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitBreaking}}
+    {{/commits}}
+  {{/ifContainsBreaking}}
+
+
+  {{#ifContainsType commits type='feat'}}
+### Features
+
+    {{#commits}}
+      {{#ifCommitType . type='feat'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='fix'}}
+### Bug Fixes
+
+    {{#commits}}
+      {{#ifCommitType . type='fix'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='docs'}}
+### Documentation
+
+    {{#commits}}
+      {{#ifCommitType . type='docs'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='refactor'}}
+### Refactor
+
+    {{#commits}}
+      {{#ifCommitType . type='refactor'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='perf'}}
+### Performance
+
+    {{#commits}}
+      {{#ifCommitType . type='perf'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='test'}}
+### Testing
+
+    {{#commits}}
+      {{#ifCommitType . type='test'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='chore'}}
+### Chores
+
+    {{#commits}}
+      {{#ifCommitType . type='chore'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='style'}}
+### Styles
+
+    {{#commits}}
+      {{#ifCommitType . type='style'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='build'}}
+### Builds
+
+    {{#commits}}
+      {{#ifCommitType . type='build'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='ci'}}
+### Continuous Integrations
+
+    {{#commits}}
+      {{#ifCommitType . type='ci'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+
+  {{#ifContainsType commits type='cd'}}
+### Continuous Delivery
+
+    {{#commits}}
+      {{#ifCommitType . type='cd'}}
+  - {{#eachCommitScope .}} **{{.}}**  : {{/eachCommitScope}} {{{commitDescription .}}} ([{{hash}}](https://bitbucket.org/truedmp/spf-profile-extended/commits/{{hashFull}})) {{commitDate .}}
+      {{#eachCommitFooter .}}
+        {{#ifFooterHasValue .}}
+        ([{{token}}#{{{value}}}](https://truedmp.atlassian.net/browse/{{value}}))
+        {{/ifFooterHasValue}}
+      {{/eachCommitFooter}}
+      {{/ifCommitType}}
+    {{/commits}}
+  {{/ifContainsType}}
+
+{{/ifReleaseTag}}
+{{/tags}}
